@@ -347,7 +347,7 @@ class CustomDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final DialogThemeData dialogTheme = DialogTheme.of(context);
+    // final DialogThemeData dialogTheme = DialogTheme.of(context);
     return AnimatedPadding(
       padding: MediaQuery.of(context).viewInsets +
           const EdgeInsets.symmetric(horizontal: 22.0, vertical: 24.0),
@@ -366,7 +366,7 @@ class CustomDialog extends StatelessWidget {
               elevation: 15.0,
               color: _getColor(context),
               type: MaterialType.card,
-              shape: shape ?? dialogTheme.shape ?? _defaultDialogShape,
+              shape: shape ?? _defaultDialogShape,
               child: child,
             ),
           ),
